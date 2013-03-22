@@ -7,10 +7,10 @@ echo "-----> Installing GhostScript 9.07"
 cd $1
 
 # download the mruby binary (-O) silently (-s)
-curl https://s3.amazonaws.com/clearideas-public/ghostscript-9.07.gz -s -O
+curl https://s3.amazonaws.com/clearideas-public/ghostscript-9.tgz -s -O
 
 # make a directory to untar (like unzip) the binary
 mkdir -p vendor/gs
 
 # untar the binary to the directory we want
-tar -C vendor/gs -xvf ghostscript-9.07.gz
+tar -C vendor/gs -xvf ghostscript-9.tgz
